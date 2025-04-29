@@ -227,11 +227,55 @@
             </div>
           </section>
 
+          {/* About Modal */}
+          <div 
+            className="modal fade" 
+            id="aboutModal" 
+            tabIndex="-1" 
+            aria-labelledby="aboutModalLabel" 
+            aria-hidden="true"
+          >
+            <div className="modal-dialog modal-lg">
+              <div className="modal-content">
+                <div className="modal-header bg-success text-white">
+                  <h5 className="modal-title" id="aboutModalLabel">About UAB AI Chat Assistant</h5>
+                  <button type="button" className="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div className="modal-body">
+                  <h4>Our Mission</h4>
+                  <p>We're on a mission to make university life easier for UAB students. The UAB AI Chat Assistant is a student-led project designed to simplify navigating the complexities of campus life, from fees to course registration to finding resources.</p>
+
+                  <h4>What We Do</h4>
+                  <p>Our AI-powered assistant provides instant, personalized answers to your questions, 24/7. Whether you need help with "How much do I owe?" or "Where's tutoring?", we deliver clear guidance and connect you to the resources that matter most.</p>
+
+                  <h4>Why It Matters</h4>
+                  <p>University websites can be a maze, wasting time and adding stress. We're here to cut through the clutter, save you time, reduce stress, and help you focus on succeeding at UAB.</p>
+
+                  <h4>Our Vision</h4>
+                  <p>We envision a UAB where every student has a trusted, friendly tool to make their academic journey smoother. This pilot is the first step toward transforming how students access information and support.</p>
+
+                  <h4>Get Involved</h4>
+                  <p>Join our pilot to experience the future of student support. Your feedback will shape a tool built by students, for students, to improve life at UAB.</p>
+                </div>
+                <div className="modal-footer">
+                  <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
           {/* Footer */}
           <footer className="bg-dark text-white text-center py-3">
             <p>© 2025 UAB AI Chat Assistant | Developed by UAB Students</p>
             <p>
-              <a href="#" className="text-white">About</a> |{' '}
+              <a 
+                href="#" 
+                className="text-white" 
+                data-bs-toggle="modal" 
+                data-bs-target="#aboutModal"
+              >
+                About
+              </a> |{' '}
               <a href="#" className="text-white">Privacy</a> |{' '}
               <a 
                 href="https://docs.google.com/forms/d/e/1FAIpQLSdA7zRDWgapr3K1QKHtgruwFzsLuceW0Wgbd6XmasoLLFobHg/viewform" 
